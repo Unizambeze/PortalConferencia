@@ -3,107 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="unizambeze.ico" type="image/x-icon">
     <title>Conferência Científica - Universidade Zambeze</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Roboto', sans-serif;
             background-color: #f5f5f5;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
+            color: #333;
         }
         header {
             background-color: #135394;
             color: #fff;
-            padding: 20px;
-            text-align: center;
+            padding: 30px 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
         }
         header img {
-            display: block;
-            margin: 0 auto;
             height: 80px;
         }
-        .container {
-            display: flex;
-            justify-content: space-around;
-            margin: 20px;
+        h1, h2 {
+            margin: 10px 0;
+        }
+        h2 {
+            font-weight: 300;
         }
         .content {
-            flex: 1;
-            margin-right: 20px;
-            background-color: #fff;
+            background-color: #ffffff;
             padding: 20px;
             border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
-        .qr-codes {
-            flex: 1;
-            text-align: center;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
         }
         .qr-code {
-            margin: 10px;
-            text-align: center;
+            padding: 10px;
+            border: 1px solid #135394;
+            border-radius: 8px;
+            background-color: #e9f3ff;
+            margin-top: 20px;
         }
         footer {
             background-color: #135394;
             color: white;
             text-align: center;
             padding: 10px;
-            position: fixed;
+            position: relative;
             bottom: 0;
             width: 100%;
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
         }
         a {
             color: #3498db;
             text-decoration: none;
+            font-weight: 600;
         }
         a:hover {
             text-decoration: underline;
-        }
-        h3 {
-            color: #135394;
+            color: #2980b9;
         }
     </style>
 </head>
 <body>
 
-<header>
+<header class="text-center">
     <img src="uz.jpg" alt="Logo Universidade Zambeze">
     <h1>Conferência Científica</h1>
     <h2>Universidade Zambeze</h2>
     <p>Data: 15 de Outubro de 2024 | Hora: 10:00 - 16:00</p>
 </header>
 
-<div class="container">
-    <div class="content">
-        <h3>Sobre a Conferência</h3>
-        <p>Bem-vindo à Conferência Científica organizada pela Universidade Zambeze. O evento contará com a participação de renomados pesquisadores de várias partes do mundo, que discutirão os avanços nas áreas de tecnologia, inovação, e educação científica.</p>
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-8 content">
+            <h3>Sobre a Conferência</h3>
+            <p>Bem-vindo à Conferência Científica organizada pela Universidade Zambeze. O evento contará com a participação de renomados pesquisadores de várias partes do mundo, que discutirão os avanços nas áreas de tecnologia, inovação e educação científica.</p>
 
-        <h3>Acesso à Conferência</h3>
-        <p>A conferência será realizada de forma online através da plataforma de videoconferência. Utilize o link abaixo para acessar:</p>
-        <p><a href="https://ead.unizambeze.ac.mz/mod/bigbluebuttonbn/view.php?id=10026">Acessar Conferência</a></p>
+            <h3>Acesso à Conferência</h3>
+            <p>A conferência será realizada de forma online através da plataforma de videoconferência. Utilize o link abaixo para acessar:</p>
+            <p><a href="https://ead.unizambeze.ac.mz/mod/bigbluebuttonbn/view.php?id=10026">Acessar Conferência</a></p>
 
-        <h3>Lista de Presença</h3>
-        <p>Para confirmar sua participação, por favor, acesse a lista de presença utilizando o link abaixo:</p>
-        <p><a href="https://forms.office.com/Pages/DesignPage.aspx?CT=1728294609612&OR=ItemsView#FormId=pUHwVCKSyEm6olfaYMCGIFGFIruE8XNNkQRsribTOD1UMUxXTzA2N0UwUU5VOTJISVI1U1lKOVg4US4u&FlexPane=Settings">Lista de Presença</a></p>
+            <h3>Lista de Presença</h3>
+            <p>Para confirmar sua participação, por favor, acesse a lista de presença utilizando o link abaixo:</p>
+            <p><a href="https://forms.office.com/Pages/DesignPage.aspx?CT=1728294609612&OR=ItemsView#FormId=pUHwVCKSyEm6olfaYMCGIFGFIruE8XNNkQRsribTOD1UMUxXTzA2N0UwUU5VOTJISVI1U1lKOVg4US4u&FlexPane=Settings">Lista de Presença</a></p>
 
-        <h3>Palestrantes</h3>
-        <ul>
-            <li>Felton - TI</li>
-            <li>Elton - TI</li>
-            <li>Delton - TI</li>
-        </ul>
-    </div>
-
-    <div class="qr-codes">
-        <div class="qr-code">
-            <h4>QR Code para Acesso</h4>
-            <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://ead.unizambeze.ac.mz/mod/bigbluebuttonbn/view.php?id=10026" alt="QR Code Acesso Conferência">
+            <h3>Palestrantes</h3>
+            <ul>
+                <li>Felton - TI</li>
+                <li>Elton - TI</li>
+                <li>Delton - TI</li>
+            </ul>
         </div>
-        <div class="qr-code">
-            <h4>QR Code para Lista de Presença</h4>
-            <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://forms.office.com/Pages/DesignPage.aspx?CT=1728294609612&OR=ItemsView#FormId=pUHwVCKSyEm6olfaYMCGIFGFIruE8XNNkQRsribTOD1UMUxXTzA2N0UwUU5VOTJISVI1U1lKOVg4US4u&FlexPane=Settings" alt="QR Code Lista de Presença">
+
+        <div class="col-md-4 text-center">
+            <div class="qr-code">
+                <h4>QR Code para Acesso</h4>
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://ead.unizambeze.ac.mz/mod/bigbluebuttonbn/view.php?id=10026" alt="QR Code Acesso Conferência">
+            </div>
+            <div class="qr-code">
+                <h4>QR Code para Lista de Presença</h4>
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://forms.office.com/Pages/DesignPage.aspx?CT=1728294609612&OR=ItemsView#FormId=pUHwVCKSyEm6olfaYMCGIFGFIruE8XNNkQRsribTOD1UMUxXTzA2N0UwUU5VOTJISVI1U1lKOVg4US4u&FlexPane=Settings" alt="QR Code Lista de Presença">
+            </div>
         </div>
     </div>
 </div>
@@ -112,5 +110,8 @@
     <p>Universidade Zambeze - Conferência Científica 2024</p>
 </footer>
 
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
