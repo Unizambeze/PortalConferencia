@@ -10,117 +10,166 @@
     <style>
         body {
             font-family: 'Roboto', sans-serif;
-            background-color: #f5f5f5;
+            background-color: #f4f4f9;
             color: #333;
+            margin: 0;
+            padding: 0;
         }
+
         header {
             background-color: #135394;
             color: #fff;
             padding: 30px 0;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            text-align: center;
         }
+
         header img {
             height: 80px;
+            margin-bottom: 15px;
         }
+
         h1, h2 {
-            margin: 10px 0;
+            margin: 5px 0;
         }
+
+        h1 {
+            font-weight: 600;
+        }
+
         h2 {
             font-weight: 300;
         }
+
         .content {
             background-color: #ffffff;
-            padding: 20px;
+            padding: 30px;
             border-radius: 8px;
+            box-shadow: 0 6px 30px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        .section-title {
+            font-weight: 600;
+            color: #135394;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #135394;
+            padding-bottom: 5px;
+        }
+
+        .qr-code {
+            padding: 20px;
+            border: 1px solid #135394;
+            border-radius: 8px;
+            background-color: #e9f3ff;
+            margin-top: 20px;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
         }
+
         footer {
             background-color: #135394;
             color: white;
             text-align: center;
-            padding: 10px;
+            padding: 20px;
             position: relative;
             bottom: 0;
             width: 100%;
             box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
         }
+
         a {
             color: #3498db;
             text-decoration: none;
             font-weight: 600;
         }
+
         a:hover {
             text-decoration: underline;
             color: #2980b9;
+        }
+
+        .modal-header {
+            background-color: #135394;
+            color: white;
+            border-bottom: 2px solid #fff;
+        }
+
+        .modal-footer {
+            background-color: #f7f7f7;
+        }
+
+        .modal-content {
+            border-radius: 8px;
         }
     </style>
 </head>
 <body>
 
-<header class="text-center">
+<header>
     <img src="uz.jpg" alt="Logo Universidade Zambeze">
     <h1>1ª Conferência Científica</h1>
     <h2>Universidade Zambeze</h2>
-    <p>Data: 21 e 22 de Novembro de 2024 | Hora: 10:00 - 16:00</p>
+    <p>21 e 22 de Novembro de 2024</p>
 </header>
 
-<div class="container mt-4">
+<div class="container mt-5">
     <div class="row">
         <div class="col-md-8 content">
-            <h3>Sobre a Conferência</h3>
-            <p>A 1ª Conferência Científica da Universidade Zambeze tem como lema "Impacto das Universidades e Instituições de Investigação no Desenvolvimento Científico, Tecnológico e Social do País". O evento visa promover discussões sobre os resultados das pesquisas e inovações produzidas pela Universidade, além de avaliar sua intervenção na sociedade e sua relação com o setor produtivo nacional.</p>
+            <h3 class="section-title">Sobre a Conferência</h3>
+            <p>Bem-vindo à 1ª Conferência Científica organizada pela Universidade Zambeze. Este evento será uma excelente oportunidade para discutir os impactos da ciência e da tecnologia no desenvolvimento do país, com a participação de docentes, pesquisadores, estudantes e parceiros da universidade.</p>
 
-            <h3>Objetivos da Conferência</h3>
+            <h3 class="section-title">Objetivos da Conferência</h3>
             <ul>
-                <li>Promover um espaço de debate sobre as perspectivas e desafios de integração das universidades e instituições de investigação no desenvolvimento do país;</li>
-                <li>Discutir políticas de ensino, formação de pesquisadores e cientistas, além de ações de pesquisa e extensão;</li>
-                <li>Aprimorar estratégias para a implementação de projetos de desenvolvimento científico, tecnológico e social;</li>
-                <li>Contribuir para o fomento à ciência e tecnologia.</li>
+                <li>Debater as perspectivas e desafios das universidades no desenvolvimento do país;</li>
+                <li>Discutir políticas de ensino, formação de pesquisadores e projetos de pesquisa;</li>
+                <li>Aprimorar estratégias para implementar projetos de desenvolvimento científico e social;</li>
+                <li>Contribuir para o avanço da ciência e tecnologia.</li>
             </ul>
 
-            <h3>Programa Geral</h3>
-            <p>A Conferência será dividida em várias áreas temáticas, com modalidades presenciais e online. Confira o programa completo com os eixos temáticos:</p>
+            <h3 class="section-title">Eixos Temáticos</h3>
             <ul>
-                <li><strong>Ciências de Saúde:</strong> Faculdade de Ciências de Saúde (Cidade de Tete)</li>
-                <li><strong>Engenharia e Inovação Tecnológica:</strong> Faculdade de Ciência e Tecnologia (Cidade da Beira)</li>
-                <li><strong>Ciências Agrárias e dos Alimentos:</strong> Faculdade de Engenharia Ambiental e dos Recursos Naturais / Faculdade de Ciências Agrárias (Vila de Ulóngue-Angónia)</li>
-                <li><strong>Recursos Naturais e Ambiente:</strong> Faculdade de Engenharia Agronómica e Florestal (Cidade de Mocuba)</li>
-                <li><strong>Direito, Economia e Sociedade:</strong> Faculdade de Direito / Faculdade de Ciências Sociais e Humanidades (Cidade da Beira)</li>
-                <li><strong>Literatura, Linguagem e Comunicação:</strong> Faculdade de Ciências Sociais e Humanidades (Cidade da Beira)</li>
+                <li>Ciências de Saúde (Faculdade de Ciências de Saúde - Cidade de Tete)</li>
+                <li>Engenharia e Inovação Tecnológica (Faculdade de Ciência e Tecnologia - Cidade da Beira)</li>
+                <li>Ciências Agrárias e dos Alimentos (Faculdade de Engenharia Ambiental e dos Recursos Naturais - Vila de Ulóngue-Angónia)</li>
+                <li>Recursos Naturais e Ambiente (Faculdade de Engenharia Agronómica e Florestal - Cidade de Mocuba)</li>
+                <li>Direito, Economia e Sociedade (Faculdade de Direito/Faculdade de Ciências Sociais e Humanidades - Cidade da Beira)</li>
+                <li>Literatura, Linguagem e Comunicação (Faculdade de Ciências Sociais e Humanidades - Cidade da Beira)</li>
             </ul>
 
-            <h3>Orador Principal</h3>
-            <p><strong>Prof. Doutor Nelson Casimiro Zavale</strong></p>
+            <h3 class="section-title">Acesso à Conferência</h3>
+            <p>A conferência será realizada tanto presencialmente quanto online. Você pode acessar a plataforma de videoconferência usando o link abaixo:</p>
+            <p><a href="https://ead.unizambeze.ac.mz/mod/bigbluebuttonbn/view.php?id=10026">Acessar Conferência</a></p>
 
-            <h3>Salas e Modalidades</h3>
-            <p>A conferência será realizada de forma presencial e online, com as seguintes salas:</p>
+            <h3 class="section-title">Lista de Presença</h3>
+            <p>Confirme sua participação clicando no link abaixo:</p>
+            <p><a href="https://forms.office.com/Pages/DesignPage.aspx?CT=1728294609612&OR=ItemsView#FormId=pUHwVCKSyEm6olfaYMCGIFGFIruE8XNNkQRsribTOD1UMUxXTzA2N0UwUU5VOTJISVI1U1lKOVg4US4u&FlexPane=Settings">Lista de Presença</a></p>
+
+            <h3 class="section-title">Palestrantes</h3>
             <ul>
-                <li><strong>Faculdade de Ciências de Saúde:</strong> 2 salas (Anfiteatro e Sala 2)</li>
-                <li><strong>Faculdade de Ciência e Tecnologia:</strong> 1 sala (Anfiteatro B)</li>
-                <li><strong>Faculdade de Engenharia Ambiental:</strong> 1 sala (Anfiteatro)</li>
-                <li><strong>Faculdade de Ciências Agrárias:</strong> 1 sala (Anfiteatro)</li>
-                <li><strong>Faculdade de Engenharia Agronómica e Florestal:</strong> 2 salas (Anfiteatro e Sala 2)</li>
-                <li><strong>Faculdade de Direito:</strong> 1 sala (Anfiteatro C)</li>
-                <li><strong>Faculdade de Ciências Sociais e Humanidades:</strong> 3 salas (Anfiteatro A, Grandes Actos e Sala 2)</li>
+                <li>Prof. Doutor Nelson Casimiro Zavale</li>
+                <li>Felton - TI</li>
+                <li>Elton - TI</li>
+                <li>Delton - TI</li>
             </ul>
-
-            <h3>Livro de Resumos</h3>
-            <p>Encontre aqui os resumos das pesquisas que serão discutidas durante os dois dias da Conferência. <a href="#">Acessar o Livro de Resumos</a></p>
         </div>
 
-        <div class="col-md-4 text-center">
-            <h4>Informações de Contato</h4>
-            <p><strong>E-mail:</strong> <a href="mailto:c.cientifica@uzambeze.ac.mz">c.cientifica@uzambeze.ac.mz</a></p>
-            <p><strong>Website:</strong> <a href="http://unizambeze.ac.mz">unizambeze.ac.mz</a></p>
-
-            <h4>Parceiros</h4>
-            <img src="partners-logos.png" alt="Logos dos Parceiros">
+        <div class="col-md-4">
+            <div class="qr-code">
+                <h4>QR Code para Acesso à Conferência</h4>
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://ead.unizambeze.ac.mz/mod/bigbluebuttonbn/view.php?id=10026" alt="QR Code Acesso Conferência" class="img-fluid">
+            </div>
+            <div class="qr-code">
+                <h4>QR Code para Lista de Presença</h4>
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://forms.office.com/Pages/DesignPage.aspx?CT=1728294609612&OR=ItemsView#FormId=pUHwVCKSyEm6olfaYMCGIFGFIruE8XNNkQRsribTOD1UMUxXTzA2N0UwUU5VOTJISVI1U1lKOVg4US4u&FlexPane=Settings" alt="QR Code Lista de Presença" class="img-fluid">
+            </div>
         </div>
     </div>
 </div>
 
 <footer>
-    <p>Universidade Zambeze - 1ª Conferência Científica 2024</p>
+    <p>Universidade Zambeze - Conferência Científica 2024</p>
+    <p>Contato: <a href="mailto:c.cientifica@uzambeze.ac.mz">c.cientifica@uzambeze.ac.mz</a></p>
+    <p><a href="https://unizambeze.ac.mz" target="_blank">www.unizambeze.ac.mz</a></p>
 </footer>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
