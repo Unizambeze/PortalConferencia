@@ -7,102 +7,150 @@
     <title>Conferência Científica - Universidade Zambeze</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            background-color: #f4f4f9;
-            color: #333;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background-color: #135394;
-            color: #fff;
-            padding: 30px 0;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-            text-align: center;
-        }
-
-        header img {
-            height: 80px;
-            margin-bottom: 15px;
-        }
-
-        h1, h2 {
-            margin: 5px 0;
-        }
-
-        h1 {
-            font-weight: 600;
-        }
-
-        h2 {
-            font-weight: 300;
-        }
-
-        .content {
-            background-color: #ffffff;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 6px 30px rgba(0, 0, 0, 0.1);
-            margin-top: 20px;
-        }
-
-        .section-title {
-            font-weight: 600;
-            color: #135394;
-            margin-bottom: 15px;
-            border-bottom: 2px solid #135394;
-            padding-bottom: 5px;
-        }
-
-        .qr-code {
-            padding: 20px;
-            border: 1px solid #135394;
-            border-radius: 8px;
-            background-color: #e9f3ff;
-            margin-top: 20px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-        }
-
-        footer {
-            background-color: #135394;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
-        }
-
-        a {
-            color: #3498db;
-            text-decoration: none;
-            font-weight: 600;
-        }
-
-        a:hover {
-            text-decoration: underline;
-            color: #2980b9;
-        }
-
-        .modal-header {
-            background-color: #135394;
-            color: white;
-            border-bottom: 2px solid #fff;
-        }
-
-        .modal-footer {
-            background-color: #f7f7f7;
-        }
-
-        .modal-content {
-            border-radius: 8px;
-        }
-    </style>
+    <link rel="stylesheet" href="../css/styless.css">
 </head>
+<style>
+    
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #135394;
+    color: #fff;
+    padding: 30px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+header img {
+    height: 80px;
+    margin-bottom: 15px;
+}
+
+h1, h2 {
+    margin: 5px 0;
+}
+
+h1 {
+    font-weight: 600;
+}
+
+h2 {
+    font-weight: 300;
+}
+
+.content {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.section-title {
+    font-weight: 600;
+    color: #135394;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #135394;
+    padding-bottom: 5px;
+}
+
+.qr-code {
+    padding: 20px;
+    border: 1px solid #135394;
+    border-radius: 8px;
+    background-color: #e9f3ff;
+    margin-top: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #135394;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #2980b9;
+}
+
+.modal-header {
+    background-color: #135394;
+    color: white;
+    border-bottom: 2px solid #fff;
+}
+
+.modal-footer {
+    background-color: #f7f7f7;
+}
+
+.modal-content {
+    border-radius: 8px;
+}
+
+.parceiro img {
+    max-width: 50px; 
+    max-height: 50px; 
+    margin: 5px; 
+    object-fit: contain; 
+    border-radius: 8px;
+    transition: transform 0.2s; 
+}
+
+.parceiro img:hover {
+    transform: scale(1.1); 
+}
+
+.parceiro {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px; 
+}
+
+
+
+
+
+
+.parceiro1 img {
+    max-width: 100px; 
+    max-height: 50px; 
+    margin: 5px; 
+    object-fit: contain; 
+    border-radius: 8px;
+    transition: transform 0.2s; 
+}
+
+.parceiro1 img:hover {
+    transform: scale(1.1); 
+}
+
+.parceiro1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px; 
+}
+
+</style>
 <body>
 
 <header>
@@ -110,13 +158,15 @@
     <h1>1ª Conferência Científica</h1>
     <h2>Universidade Zambeze</h2>
     <p>21 e 22 de Novembro de 2024</p>
+    <h3>Lema:</h3>
+    <p><em>Impacto das Universidades e Instituições de Investigação no Desenvolvimento Científico, Tecnológico e Social do país</em></p>
 </header>
 
 <div class="container mt-5">
     <div class="row">
         <div class="col-lg-8 col-md-12 content">
             <h3 class="section-title">Sobre a Conferência</h3>
-            <p>Bem-vindo à 1ª Conferência Científica organizada pela Universidade Zambeze. Este evento será uma excelente oportunidade para discutir os impactos da ciência e da tecnologia no desenvolvimento do país, com a participação de docentes, pesquisadores, estudantes e parceiros da universidade.</p>
+            <p>A 1ª Conferência Científica organizada pela Universidade Zambeze oferece uma excelente oportunidade para discutir os impactos da ciência e da tecnologia no desenvolvimento do país. Contamos com a presença de docentes, pesquisadores, estudantes e parceiros da universidade para um espaço de troca de experiências e apresentação de pesquisas.</p>
 
             <h3 class="section-title">Objetivos da Conferência</h3>
             <ul>
@@ -136,6 +186,18 @@
                 <li>Literatura, Linguagem e Comunicação (Faculdade de Ciências Sociais e Humanidades - Cidade da Beira)</li>
             </ul>
 
+            <h3 class="section-title">Programa Geral</h3>
+            <p>Confira o programa completo da I Conferência Científica da UniZambeze, que inclui sessões simultâneas presenciais e online em várias faculdades:</p>
+            <ul>
+                <li>Faculdade de Ciências de Saúde - Cidade de Tete (Salas: Ciências de Saúde A - Anfiteatro, Ciências de Saúde B - Sala 2)</li>
+                <li>Faculdade de Ciência e Tecnologia - Cidade da Beira (Sala: Engenharia e Inovação Tecnológica - Anfiteatro B)</li>
+                <li>Faculdade de Engenharia Ambiental e dos Recursos Naturais - Vila de Ulóngue-Angónia (Sala: Anfiteatro)</li>
+                <li>Faculdade de Ciências Agrárias - Vila de Ulóngue-Angónia (Sala: Anfiteatro)</li>
+                <li>Faculdade de Engenharia Agronómica e Florestal - Cidade de Mocuba (Salas: Recursos Naturais - Anfiteatro, Recursos Ambiente - Sala 2)</li>
+                <li>Faculdade de Direito - Cidade da Beira (Sala: Direito - Anfiteatro C)</li>
+                <li>Faculdade de Ciências Sociais e Humanidades - Cidade da Beira (Salas: Literatura, Linguagem e Comunicação - Anfiteatro A, Economia - Grandes Actos, Sociedade - Sala 2, Antigo Edifício)</li>
+            </ul>
+
             <h3 class="section-title">Acesso à Conferência</h3>
             <p>A conferência será realizada tanto presencialmente quanto online. Você pode acessar a plataforma de videoconferência usando o link abaixo:</p>
             <p><a href="https://ead.unizambeze.ac.mz/mod/bigbluebuttonbn/view.php?id=10026">Acessar Conferência</a></p>
@@ -143,6 +205,10 @@
             <h3 class="section-title">Lista de Presença</h3>
             <p>Confirme sua participação clicando no link abaixo:</p>
             <p><a href="https://forms.office.com/Pages/DesignPage.aspx?CT=1728294609612&OR=ItemsView#FormId=pUHwVCKSyEm6olfaYMCGIFGFIruE8XNNkQRsribTOD1UMUxXTzA2N0UwUU5VOTJISVI1U1lKOVg4US4u&FlexPane=Settings">Lista de Presença</a></p>
+
+            <h3 class="section-title">Livro de Resumos</h3>
+            <p>Encontre aqui os resumos que serão discutidos durante os dois dias da Conferência:</p>
+            <p><a href="#">Livro de Resumos</a></p>
 
             <h3 class="section-title">Palestrantes</h3>
             <ul>
@@ -159,6 +225,17 @@
                 <h4>QR Code para Lista de Presença</h4>
                 <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://forms.office.com/Pages/DesignPage.aspx?CT=1728294609612&OR=ItemsView#FormId=pUHwVCKSyEm6olfaYMCGIFGFIruE8XNNkQRsribTOD1UMUxXTzA2N0UwUU5VOTJISVI1U1lKOVg4US4u&FlexPane=Settings" alt="QR Code Lista de Presença" class="img-fluid">
             </div>
+
+            <h4 style="align-items: center;">Parceiros</h4>
+
+            <div class="parceiro" style="background-color: white;">
+                <img src="bci.ico" alt="BCI">
+                <img src="TMCEL-Logo.ico" alt="TMcel">
+            </div>
+            <div class="parceiro1" style="background-color: white;">
+                <img src="cornelder.jpg" alt="Cornelder">
+                <img src="cpmz.png" alt="CPMZ">
+            </div>
         </div>
     </div>
 </div>
@@ -166,6 +243,7 @@
 <footer>
     <p>Universidade Zambeze - Conferência Científica 2024</p>
     <p>Contato: <a href="mailto:c.cientifica@uzambeze.ac.mz">c.cientifica@uzambeze.ac.mz</a></p>
+    <p>Cell/WhatsApp: +258 XX XXX XXX</p>
     <p><a href="https://unizambeze.ac.mz" target="_blank">www.unizambeze.ac.mz</a></p>
 </footer>
 
